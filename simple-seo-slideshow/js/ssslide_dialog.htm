@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Simple SEO Slideshow</title>
+	<script type="text/javascript" src="../../../../wp-includes/js/tinymce/tiny_mce_popup.js"></script>
+	<script type="text/javascript" src="mce_dialog.js"></script>
+	<script type="text/javascript" src="../../../../wp-includes/js/tinymce/utils/mctabs.js"></script>
+	<script type="text/javascript" src="../../../../wp-includes/js/tinymce/utils/form_utils.js"></script>
+</head>
+<body role="application">
+<form onsubmit="ssSlideDialog.update();return false;" action="#">
+	<div class="tabs">
+		<ul>
+			<li id="general_tab" class="current" aria-controls="general_panel"><span><a href="javascript:mcTabs.displayTab('general_tab','general_panel');" onmousedown="return false;">Simple SEO Slideshow Options</a></span></li>
+		</ul>
+	</div>
+
+	<div class="panel_wrapper">
+		<div id="general_panel" class="panel current">
+			<table role="presentation" border="0" cellpadding="4" cellspacing="0">
+					<tr role="group" aria-labelledby="title_label">
+						<td><label id="title_label" for="sctitle">title</label></td>
+						<td class="nowrap">
+							<input id="sctitle" name="sctitle" type="text" value="" class="mceFocus" />
+						</td>
+					</tr>
+					<tr>
+						<td><label for="size">delay</label></td>
+						<td><input id="scdelay" name="scdelay" type="text" value="" class="mceFocus" /> seconds</td>
+					</tr>
+          <tr>
+						<td><label for="size">slideshow height</label></td>
+						<td><input id="scheight" name="scheight" type="text" value="" class="mceFocus" /> px</td>
+					</tr>
+					<tr>
+						<td><label for="noshade">Display slides bullets</label></td>
+						<td>
+              <span style="display:none;" id="scdisplaybul-var">yes</span>
+              <select name="scdisplaybul" id="scdisplaybul" aria-labelledby="scdisplaybul-var">
+								<option value="yes">yes</option>
+								<option value="no">no</option>
+							</select>
+            </td>
+					</tr>
+          <tr>
+						<td><label for="noshade">Display navigation arrows</label></td>
+						<td>
+              <span style="display:none;" id="scdisplayarr-var">yes</span>
+              <select name="scdisplayarr" id="scdisplayarr" aria-labelledby="scdisplayarr-var">
+								<option value="yes">yes</option>
+								<option value="no">no</option>
+							</select>
+            </td>
+					</tr>
+          <tr>
+						<td><label for="noshade">Display caption</label></td>
+						<td>
+              <span style="display:none;" id="scdisplaycap-var">yes</span>
+              <select name="scdisplaycap" id="scdisplaycap" aria-labelledby="scdisplaycap-var">
+								<option value="yes">yes</option>
+								<option value="no">no</option>
+							</select>
+            </td>
+					</tr>
+          <tr>
+						<td><label for="noshade">Bullets position</label></td>
+						<td>
+              <span style="display:none;" id="scbulpos-var">bottom-right</span>
+              <select name="scbulpos" id="scbulpos" aria-labelledby="scbulpos-var">
+                <option value="bottom-right">bottom-right</option>
+								<option value="top-left">top-left</option>
+                <option value="top-center">top-center</option>
+                <option value="top-right">top-right</option>
+                <option value="bottom-left">bottom-left</option>
+                <option value="bottom-center">bottom-center</option>
+							</select>
+            </td>
+					</tr>
+          <tr>
+						<td><label for="noshade">Caption position</label></td>
+						<td>
+              <span style="display:none;" id="sccappos-var">bottom-left</span>
+              <select name="sccappos" id="sccappos" aria-labelledby="sccappos-var">
+                <option value="bottom-left">bottom-left</option>
+								<option value="top-left">top-left</option>
+                <option value="top-center">top-center</option>
+                <option value="top-right">top-right</option>
+                <option value="bottom-center">bottom-center</option>
+                <option value="bottom-right">bottom-right</option>
+							</select>
+            </td>
+					</tr>
+          <tr>
+						<td><label for="size">Exclude images by ID</label></td>
+						<td><input id="scexclude" name="scexclude" type="text" value="" class="mceFocus" /> (seperate by comma)</td>
+					</tr>
+          <tr>
+						<td><label for="noshade">Randomize image sorting</label></td>
+						<td>
+              <span style="display:none;" id="scrandomize-var">yes</span>
+              <select name="scrandomize" id="scrandomize" aria-labelledby="scrandomize-var">
+                <option value="no">no</option>
+								<option value="yes">yes</option>
+							</select>
+            </td>
+					</tr>
+          <tr>
+						<td><label for="noshade">Choose what to link</label></td>
+						<td>
+              <span style="display:none;" id="sclinkwhat-var">yes</span>
+              <select name="sclinkwhat" id="sclinkwhat" aria-labelledby="sclinkwhat-var">
+                <option value="image">image</option>
+								<option value="caption">caption</option>
+								<option value="none">none</option>
+								<option value="both">both</option>
+							</select>
+            </td>
+					</tr>
+			</table>
+		</div>
+	</div>
+
+	<div class="mceActionPanel">
+		<input type="submit" id="insert" name="insert" value="{#insert}" />
+		<input type="button" id="cancel" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
+	</div>
+</form>
+</body>
+</html>
