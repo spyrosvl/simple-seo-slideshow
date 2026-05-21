@@ -34,8 +34,6 @@ ex. [simpleslideshow sctitle="test" scdelay=5 scheight=276 scdisplaybul=yes scdi
 
 We have made a plugin for the editor to make your life easier. Just click the SEO Slideshow button.
 
-[Detailed description, screenshots and guide for Simple Seo Slideshow](https://www.hostdog.gr/en/blog/simple-seo-slideshow-wordpress)
-
 == Installation ==
 
 1. Upload the entire `simpleslideshow` folder to the `/wp-content/plugins/` directory
