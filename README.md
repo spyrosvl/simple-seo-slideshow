@@ -2,9 +2,9 @@
 Contributors: spyrosvl
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9QBE26DTURXJQ
 Tags: slideshow widget, page slideshow widget, post slideshow widget
-Requires at least: 3.2
-Tested up to: 3.6
-Stable tag: 1.2.8
+Requires at least: 5.4
+Tested up to: 7.0
+Stable tag: 1.2.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
