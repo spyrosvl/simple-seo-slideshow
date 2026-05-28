@@ -2,17 +2,17 @@
 Contributors: spyrosvl
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9QBE26DTURXJQ
 Tags: slideshow widget, page slideshow widget, post slideshow widget
-Requires at least: 3.2
-Tested up to: 3.6
-Stable tag: 1.2.8
+Requires at least: 5.4
+Tested up to: 7.0
+Stable tag: 1.2.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A plugin to display slideshow in a widget with title, description and custom link from page or post gallery.
+A WordPress plugin to display slideshow in a widget with title, description and custom link from page or post gallery.
 
 == Description ==
 
-Simple SEO Slideshow is a plugin/widget, for displaying on your site the images of a gallery from specified post or page.
+Simple SEO Slideshow is a WordPress plugin/widget, for displaying on your site the images of a gallery from specified post or page.
 
 = Widget options =
 
@@ -39,8 +39,6 @@ You can use a shortcode to insert a slideshow of the gallery images of the post/
 ex. [simpleslideshow sctitle="test" scdelay=5 scheight=276 scdisplaybul=yes scdisplayarr=yes scrandomize=no sclinkwhat=image scdisplaycap=yes scbulpos=bottom-right sccappos=bottom-left]
 
 We have made a plugin for the editor to make your life easier. Just click the SEO Slideshow button.
-
-[Detailed description, screenshots and guide for Simple Seo Slideshow](https://www.hostdog.gr/en/blog/simple-seo-slideshow-wordpress)
 
 == Installation ==
 
@@ -128,6 +126,11 @@ Insert it in to the post and switch to HTML. There you can see the attachment id
 * Initial version.
 
 == Upgrade Notice ==
+
+= 1.2.9 =
+
+* Resolved security issue (CVE-2026-8900)
+* Added auto calculation of slider height
 
 = 1.2.8 =
 
